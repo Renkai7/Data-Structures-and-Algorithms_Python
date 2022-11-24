@@ -55,6 +55,7 @@ def another_fun_challenge(user_input):
 
     who_am_i = "I don't know"  # O(1)
 
+
 # BIG O NOTATION
 # Big O(4 + 5n) = O(n)
 
@@ -65,4 +66,10 @@ def another_fun_challenge(user_input):
 # - Constant numbered values such as '1' or '100' always get removed (ex. O(n + 1(100)) removes the numerical value for
 # just O(n)
 # Rule 3: Different terms for inputs
+# - if a function has multiple input values then you have to count them
+def compress_boxes_twice(box1, box2):
+    pass
+# - function above would be O(a + b)
 # Rule 4: Drop Non Dominants
+# - remove the lower term
+# O(n^2 + 3x + 100 + x/2) = O(n^2)
