@@ -11,6 +11,7 @@ def find_nemo(array):
     for i in range(len(array)):
         if array[i] == 'nemo':
             print("Found Nemo!")
+            break
     t1 = time.time()
     print(f"Search took {t1 - t0} seconds.")
 
@@ -59,6 +60,9 @@ def another_fun_challenge(user_input):
 
 # Rule Book for Big O
 # Rule 1: Worst Case
+# - Always assume the worst case; can't assume things will go well
 # Rule 2: Remove Constants
+# - Constant numbered values such as '1' or '100' always get removed (ex. O(n + 1(100)) removes the numerical value for
+# just O(n)
 # Rule 3: Different terms for inputs
 # Rule 4: Drop Non Dominants
